@@ -1,0 +1,10 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url(https://github.com/adimitui/iXassignments/blob/master/Day1/roboto-fontfacekit.zip);
+}
+
+h1 {
+	font-family: myFirstFont, Verdana, sans-serif;
+	font-size: 96px;
+	text-align: center;
+}
