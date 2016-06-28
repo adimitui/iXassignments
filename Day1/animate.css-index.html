@@ -12,5 +12,60 @@
 <body>
 	<!-- Title -->
 	<h1>Animate.css</h1>
+
+	<!-- Subheading -->
+	<h3>Just-add-water CSS animations</h3>
+
+	<!-- Javascript for dropdown menu -->
+	<script language="javascript">
+		// When the user clicks on the button, toggle between hiding/showing the content
+		var myFunction = function() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		};
+
+		// Close dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches(".dropbtn")) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains("show")) {
+						openDropdown.classList.remove("show");
+					}
+				}
+			}
+		}
+	</script>
+
+	<!-- Dropdown Menu -->
+	<div class="container">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+			<div id="myDropdown" class="dropdown-content">
+				<p><strong>Attention Seekers</strong></p>
+				<a href="#">bounce</a>
+				<a href="#">flash</a>
+				<a href="#">pulse</a>
+			</div>
+		</div>
+
+		<a href="#">
+			<div id="animateButton">
+				<p>Animate it</p>
+			</div>
+		</a>
+	</div>
+
+	<!-- Divider -->
+	<div class="container">
+		<img src="C:\Users\Adelle Ingrid\Desktop\ix\iXassignments\Day1\Media\013.PNG"/>
+	</div>
+
+	<!-- Links -->
+	<div class="container">
+		<p><a href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"><span id="download">Download Animate.css</span></a> or <a href="https://github.com/daneden/animate.css"><span id="github">View on GitHub</span></a></p>
+
+		<h6>Another thing from <a href="https://daneden.me/"><span id="eden">Daniel Eden</span></a>.</h6>
+	</div>
 </body>
 </html>
