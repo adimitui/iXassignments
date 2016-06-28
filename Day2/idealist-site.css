@@ -2,32 +2,10 @@ body {
 	background-color: #FF9300;
 }
 
-/* Font Face: Open Sans Bold */
-@font-face {
-  font-family: 'Open Sans Bold';
-  font-style: normal;
-  font-weight: 700;
-  src: url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Open Sans Bold'), local('OpenSans-Bold'),
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
-}
-
-/* Font Face: Open Sans Regular */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Open Sans'), local('OpenSans'),
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('C:/Users/Adelle Ingrid/Desktop/ix/iXassignments/Day2/fonts/open-sans-v13-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+/* Container */
+.container {
+	width: 900px;
+	margin: 0px auto;
 }
 
 /* Hero */
@@ -55,10 +33,11 @@ body {
 
 .heroText h1 {
 	color: #FFF;
-	font-family: "Open Sans Bold";
+	font-family: "Open Sans";
 	font-size: 50px;
 	margin-bottom: -25px;
 	padding-top: -100px;
+	font-weight: 700;
 }
 
 .heroText h2 {
@@ -82,12 +61,15 @@ body {
 	padding-bottom: 12px;
 	width: 225px;
 	text-align: center;
+	display: inline-block;
+	border-radius: 1px;
 }
 
 .button:hover {
 	color: #FFF;
 	background-color: #44BCC9;
 	transition: .5s all ease;
+	border-radius: 1px;
 }
 
 a {
@@ -100,6 +82,40 @@ a {
 
 .heroText a:nth-child(4) div {
 	margin-bottom: 40px;
+}
+
+.heroText input {
+	width: 221px;
+	border: 2px solid #FFF;
+	background-color: #FF9300;
+	text-align: center;
+	font-family: "Open Sans";
+	font-color: #FFF;
+	font-size: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-bottom: 5px;
+}
+
+.heroText input:focus {
+	background-color: #FFF;
+	border: 2px solid #44BCC8;
+}
+
+::-webkit-input-placeholder {
+	color: #FFF;
+}
+
+:-moz-input-placeholder {
+	color: #FFF;
+}
+
+::-moz-placeholder {
+	color: #FFF;
+}
+
+:-ms-input-placeholder {
+	color: #FFF;
 }
 
 hr {
@@ -136,9 +152,41 @@ hr {
 	text-align: center;
 }
 
+.store .container {
+	text-align: center;
+}
+
 .store h3 {
-	font-family: "Open Sans Bold";
+	font-family: "Open Sans";
 	font-size: 18px;
 	color: #FFF;
 	margin-top: 45px;
+	padding-bottom: 25px;
+}
+
+.store .button {
+	margin-bottom: 25px;
+}
+
+/* Footer */
+.footer .container {
+	text-align: center;
+}
+
+.footer p a {
+	text-decoration: underline;
+	color: #FFF;
+}
+
+.footer p {
+	font-family: "Open Sans";
+	color: #FFF;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.footer img {
+	width: 110px;
+	margin-bottom: 50px;
 }
