@@ -116,23 +116,25 @@ body > .container {
 .container .two-thirds {
 	display: inline-block;
 	width: 66%;
+	position: relative;
 }
 
 .container .one-third {
 	display: inline-block;
 	width: 32%;
+	position: relative;
 }
 
-.container .two-thirds > img {
+.container .two-thirds img {
 	width: 100%;
 	margin-bottom: 18px;
 }
 
-.container .one-third > img {
+.container .one-third img {
 	width: 100%;
 }
 
-.container .one-third img:last-child {
+.container .one-third div:last-child img {
 	margin-top: 16px;
 	margin-bottom: 18px;
 }
@@ -156,6 +158,30 @@ body div:nth-child(7) div:nth-child(2) {
 
 body div:nth-child(7) div {
 	margin-bottom: 60px;
+}
+
+/* Overlay */
+.overlay {
+	position: relative;
+}
+
+.overlay:before {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 0;
+}
+
+.overlay:hover:before {
+	display: block;
+}
+
+.grey:before {
+	background-color: rgba(0,0,0,0.5);
 }
 
 /* Footer */
