@@ -1,0 +1,164 @@
+body {
+	background-color: #000;
+}
+
+/* Container */
+.container {
+	max-width: 1150px;
+	margin: 0px auto;
+}
+
+/* Header */
+.headerLeft {
+	float: left;
+}
+
+.headerLeft a {
+	text-decoration: none;
+}
+
+.headerLeft h2 {
+	font-family: "Oxygen";
+	color: #FFF;
+	margin-top: -3px;
+	display: inline-block;
+}
+
+.headerLeft h2:hover {
+	color: #808080;
+}
+
+.headerLeft img {
+	display: inline-block;
+	margin-left: 175px;
+	margin-bottom: -7px;
+}
+
+.headerLeft img:hover {
+	opacity: .7;
+}
+
+.headerRight ul {
+	text-align: right;
+	padding-top: 5px;
+}
+
+.headerRight ul li {
+	font-family: "Oxygen";
+	list-style: none;
+	display: inline-block;
+	color: #FFF;
+	margin-left: 50px;
+}
+
+.headerRight ul li:hover {
+	color: #808080;
+}
+
+.headerRight ul li span {
+	border-bottom: 4px solid #FF7100;
+	padding-bottom: 7px;
+}
+
+/* Description */
+.description .container {
+	margin-top: 90px;
+}
+
+.descriptionLeft {
+	width: 60%;
+	float: left;
+}
+
+.descriptionLeft h2 {
+	font-family: "Oxygen";
+	font-size: 22px;
+	color: #FFF;
+	margin-bottom: -12px;
+	line-height: 34px;
+	margin-bottom: 80px;
+}
+
+.descriptionCenter {
+	width: 19%;
+	float: right;
+}
+
+.descriptionRight {
+	width: 10%;
+	float: right;
+}
+
+.description ul > a, .footer ul > a {
+	text-decoration: none;
+}
+
+.description ul li, .footer ul li {
+	font-family: "Oxygen";
+	list-style: none;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.descriptionRight ul li:hover, .descriptionCenter ul a li:hover {
+	color: #788070;
+	text-decoration: underline;
+	transition: .2s;
+}
+
+/* Image Grid */
+body > .container {
+	display: block;
+}
+
+.container .two-thirds {
+	display: inline-block;
+	width: 66%;
+}
+
+.container .one-third {
+	display: inline-block;
+	width: 32%;
+}
+
+.container .two-thirds > img {
+	width: 100%;
+	margin-bottom: 18px;
+}
+
+.container .one-third > img {
+	width: 100%;
+}
+
+.container .one-third img:last-child {
+	margin-top: 16px;
+	margin-bottom: 18px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.last {
+	margin-top: -14px;
+}
+
+body div:nth-child(7) div:nth-child(2) {
+	margin-left: 23px;
+	margin-right: 23px;
+}
+
+body div:nth-child(7) div {
+	margin-bottom: 60px;
+}
+
+/* Footer */
+.footer ul {
+	margin-bottom: 50px;
+}
