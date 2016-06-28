@@ -1,0 +1,182 @@
+body {
+	background-color: #EBB263;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* Header */
+.header {
+	background-color: #EBB263;
+}
+
+.header h4 {
+	display: inline-block;
+	color: #FFF;
+}
+
+.header ul, .header ul li {
+	display: inline-block;
+	text-align: right;
+	color: rgba(253,253,253,.8);
+	list-style: none;
+}
+
+.header ul {
+	margin-left: 600px;
+}
+
+.header ul li {
+	margin-left: 30px;
+}
+
+.header ul li:hover {
+	color: #FFF;
+}
+
+/* Jumbotron */
+.jumbotron {
+	background-color: #EBB263;
+}
+
+.jumbotron .container {
+	text-align: center;
+}
+
+.jumbotron img:first-child {
+	margin-top: 30px;
+}
+
+.jumbotron h4 {
+	color: #FFF;
+}
+
+#circle {
+	width: 50px;
+	height: 50px;
+	border: 2px solid rgba(253,253,253,.7);
+	border-radius: 100%;
+	background-color: #EBB263;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#circle:hover {
+	border-color: #FFF;
+}
+
+#circle img {
+	margin: auto;
+	margin-top: 25px;
+}
+
+.jumbotron img:nth-child(4) {
+	width: 800px;
+}
+
+/* Clients */
+.clients {
+	background-color: #F6F6F6;
+	margin-left: -100px;
+	margin-right: -100px;
+}
+
+.wide {
+	max-width: 1120px;
+}
+
+.clients .container:nth-child(2) {
+	text-align: center;
+}
+
+.clients h2 {
+	padding-top: 40px;
+}
+
+.clients img {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 70px;
+}
+
+/* Banner */
+.banner {
+	background-color: #85DBC2;
+	margin-left: -100px;
+	margin-right: -100px;
+	margin-top: -30px;
+}
+
+.banner h3 {
+	padding-top: 50px;
+	color: #FFF;
+	display: inline-block;
+}
+
+#button {
+	display: inline-block;
+	color: #FFF;
+	border: 2px solid rgba(253,253,253,.7);
+	padding: 8px 20px;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#button:hover {
+	border-color: #FFF;
+}
+
+/* Footer */
+.footer {
+	background-color: #F7F7F7;
+	margin-left: -100px;
+	margin-right: -100px;
+	margin-top: -30px;
+}
+
+.footer h4 {
+	padding-top: 5px;
+	display: inline-block;
+	color: #939598;
+}
+
+.footer h4:hover {
+	color: #333;
+}
+
+.footer ul {
+	display: inline-block;
+	margin-left: 740px;
+}
+
+.footer ul li {
+	display: inline-block;
+	list-style: none;
+	color: #939598;
+	margin-left: 30px;
+}
+
+.footer ul li:hover {
+	color: #333;
+}
+
+/* Bottom Footer */
+.footer_2 {
+	background-color: #FFF;
+	margin-left: -100px;
+	margin-right: -100px;
+}
+
+.footer_2 img {
+	display: inline-block;
+	margin-left: -10px;
+}
+
+.footer_2 h6 {
+	display: inline-block;
+	margin-left: 750px;
+	color: #939598;
+}
