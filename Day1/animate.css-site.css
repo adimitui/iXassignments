@@ -1,10 +1,151 @@
+/* Fonts */
 @font-face {
-	font-family: myFirstFont;
-	src: url(https://github.com/adimitui/iXassignments/blob/master/Day1/roboto-fontfacekit.zip);
+    font-family: 'robotothin';
+    src: url('Roboto-Thin-webfont.eot');
+    src: url('Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Thin-webfont.woff') format('woff'),
+         url('Roboto-Thin-webfont.ttf') format('truetype'),
+         url('Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1 {
-	font-family: myFirstFont, Verdana, sans-serif;
-	font-size: 96px;
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('Roboto-Bold-webfont.eot');
+    src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Bold-webfont.woff') format('woff'),
+         url('Roboto-Bold-webfont.ttf') format('truetype'),
+         url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Container */
+.container {
+	max-width: 100%;
+	margin: auto;
 	text-align: center;
+}
+
+/* Header */
+h1 {
+	font-family: robotothin, Verdana, sans-serif;
+	font-size: 80px;
+	text-align: center;
+	margin-bottom: -10px;
+	margin-top: 100px;
+	color: #008FCC;
+}
+
+h3 {
+	font-family: robotoregular, Verdana, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #86939C;
+}
+
+/* Dropdown Menu */
+button {
+	padding: 19px 50px;
+	text-align: left;
+	margin-top: 40px;
+}
+
+.dropbtn {
+	background-color: #FFF;
+	color: #000
+	border: 1px solid #C0C8C9;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #FFF;
+	width: 100%;
+	overflow: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: robotoregular;
+}
+
+/* Show the dropdown menu */
+.show {
+	display: block;
+}
+
+.dropdown a {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+/* Dropdown Button: Animate It */
+#animateButton {
+	padding: 1px 20px;
+	border: 2px solid #008FCC;
+	display: inline-block;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#animateButton p {
+	font-family: robotobold;
+	color: #008FCC;
+}
+
+/* Divider */
+.container > img {
+	margin-top: 15px;
+}
+
+/* Links */
+div:last-child {
+	text-align: center;
+}
+
+div:last-child p {
+	font-family: robotoregular, Verdana, sans-serif;
+	color: #999;
+}
+
+#download, #github, #eden {
+	text-decoration: underline;
+	color: #999;
+}
+
+#download:hover, #github:hover, #eden:hover {
+	color: #008FCC;
+}
+
+h6 {
+	font-family: robotoregular, Verdana, sans-serif;
+	color: #999;
 }
