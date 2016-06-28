@@ -62,14 +62,14 @@ body {
 	width: 225px;
 	text-align: center;
 	display: inline-block;
-	border-radius: 1px;
+	border-radius: 2px;
 }
 
 .button:hover {
 	color: #FFF;
 	background-color: #44BCC9;
 	transition: .5s all ease;
-	border-radius: 1px;
+	border-radius: 2px;
 }
 
 a {
@@ -100,6 +100,7 @@ a {
 .heroText input:focus {
 	background-color: #FFF;
 	border: 2px solid #44BCC8;
+	color: #44BCC8;
 }
 
 ::-webkit-input-placeholder {
