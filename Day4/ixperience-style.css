@@ -1,0 +1,210 @@
+/* General Classes */
+* {
+	box-sizing: border-box;
+}
+
+.center {
+	text-align: center;
+	width: 100%;
+}
+
+.overlay {
+	background-color: rgba(0,0,0,.3);
+}
+
+.column {
+	width: 33%;
+	float: left;
+}
+
+.one-half {
+	width: 50%;
+	float: left;
+}
+
+/* Our Mission */
+.our-mission {
+	background: url("https://scontent.xx.fbcdn.net/v/t1.0-9/11904704_380869105445376_242181035061538737_n.jpg?oh=1be83d623d502116997826522ac3d8fd&oe=57FFD67E");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 0px -50px;
+}
+
+.our-mission h1 {
+	font-family: "Lato";
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+	margin-top: 200px;
+}
+
+.our-mission span {
+	width: 600px;
+	display: inline-block;
+}
+
+.our-mission h2 {
+	font-family: "Lato";
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	line-height: 45px;
+}
+
+/* Founders */
+.founders {
+	background-color: #F3F6F8;
+	padding-bottom: 70px;
+}
+
+.founders h1 {
+	font-family: "Lato";
+	font-size: 48px;
+	line-height: 65px;
+	padding-top: 30px;
+}
+
+.founders p {
+	font-family: "Lato";
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.founders .aaron-fuchs {
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.founders .darren-kramer {
+	margin-left: 10px;
+}
+
+.founders .left-image {
+	float: left;
+	width: 33%;
+}
+
+.founders img {
+	width: 90%;
+	border-radius: 100%;
+	margin-top: 10px;
+}
+
+.founders .right {
+	float: right;
+	width: 66%;
+}
+
+.founders .aaron-fuchs p, .founders .darren-kramer p {
+	font-size: 16px;
+}
+
+/* Our Team */
+.our-team {
+	background-color: #FFF;
+	padding-bottom: 60px;
+}
+
+.our-team h1 {
+	font-family: "Lato";
+	font-size: 48px;
+	color: #000;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.our-team img {
+	width: 200px;
+	border-radius: 100%;
+}
+
+.our-team h4 {
+	font-family: "Lato";
+	font-size: 18px;
+	color: #000;
+}
+
+.our-team .column h4:nth-child(3) {
+	padding-bottom: 20px;
+}
+
+.thobekile {
+	display: inline;
+}
+
+.thobs {
+	display: none;
+}
+
+/* Where We Are */
+.where-we-are {
+	background-color: #F3F6F8;
+	padding-bottom: 50px;
+}
+
+.where-we-are h1, .education-philosophy h1 {
+	font-family: "Lato";
+	font-size: 48px;
+	color: #000;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 25px;
+}
+
+.where-we-are .white-box {
+	width: 100%;
+	height: 150px;
+	background-color: #FFF;
+	border: 1px solid #DCE0E0;
+	padding-bottom: -20px;
+	margin-bottom: 30px;
+}
+
+.where-we-are img {
+	width: 80px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.where-we-are h3 {
+	font-family: "Lato";
+	font-size: 30px;
+	margin-top: 40px;
+	margin-left: -30px;
+}
+
+.where-we-are h6 {
+	font-family: "Lato";
+	font-size: 14px;
+	margin-left: -30px;
+}
+
+/* Education Philosophy */
+.education-philosophy {
+	padding-bottom: 100px;
+}
+
+@media(max-width: 768px) {
+	.column {
+		width: 50%;
+	}
+
+	.thobekile {
+		display: none;
+	}
+
+	.thobs {
+		display: inline;
+	}
+}
+
+@media(max-width: 480px) {
+	.column {
+		width: 100%;
+	}
+}
