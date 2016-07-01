@@ -252,10 +252,10 @@ button {
 }
 
 .resume #launch-logo {
-	width: 70px;
-	height: auto;
+	width: auto;
+	height: 90px;
 	position: relative;
-	transform: translate(0px, 8px);
+	transform: translate(0px, 6px);
 }
 
 .resume #rustic-pathways-logo {
