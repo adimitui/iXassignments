@@ -1,0 +1,359 @@
+/* General Selectors/Classes */
+* {
+	box-sizing: border-box;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	float: right;
+	margin-right: -5px;
+}
+
+.left {
+	float: left;
+	margin-left: -5px;
+}
+
+button {
+	padding: 0;
+	border: none;
+}
+
+/* Splash */
+.splash {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Adelle%20005%20Edited_zpsprdqdpdl.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 0px -80px;
+}
+
+.splash h1 {
+	font-family: "Oswald";
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 80px;
+	margin-top: 200px;
+	margin-bottom: -10px;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.7);
+}
+
+.splash h2 {
+	font-family: "Oswald";
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 30px;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.7);
+	margin-bottom: 40px;
+}
+
+.splash .circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: #000;
+	position: relative;
+	display: inline-block;
+}
+
+.splash .circle img {
+	width: 20px;
+	height: 20px;
+}
+
+.splash .circle:hover {
+	background-color: #037EBF;
+	transform: scale(1.2,1.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	transition: background-color 1s;
+	transition: transform 0.5s;
+}
+
+.splash .circle .house {
+	position: relative;
+	transform: translate(0, -2px);
+}
+
+.splash .circle .user {
+	width: 25px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, -2px);
+}
+
+.splash .circle .file {
+	width: 22px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, -1px);
+}
+
+.splash .circle .heart {
+	width: 24px;
+	height: auto;
+	position: relative;
+}
+
+.splash .circle .message {
+	height: 25px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, -1px);
+}
+
+.splash-buttons {
+	margin-bottom: 256px;
+	margin-left: 50px;
+}
+
+/* Splash Labels */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.dropdown-content {
+	font-family: "Oswald";
+	font-size: 18px;
+	text-transform: uppercase;
+	display: none;
+	position: absolute;
+	background-color: #FFF;
+	margin-top: 15px;
+	padding: 0px 10px;
+	color: #037EBF;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* About Me */
+.about-me {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Adelle%20008%20Edited_zpsaevbrgvn.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 0px -150px;
+	padding-bottom: 42px;
+}
+
+.about-me h2 {
+	font-family: "Oswald";
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.about-me p {
+	font-family: "Arial";
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #FFF;
+}
+
+/* Resume */
+.resume {
+	background-color: #FFF;
+	padding-bottom: 60px;
+}
+
+.resume h2 {
+	font-family: "Oswald";
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #222;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	margin-top: 50px;
+}
+
+.resume h3 {
+	font-family: "Oswald";
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #222;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	margin-top: 40px;
+}
+
+.resume h3 span {
+	border-bottom: 2px solid #000;
+}
+
+.resume .resume-button {
+	background-color: #222;
+	width: 380px;
+	margin-top: 20px;
+	height: 110px;
+	position: relative;
+}
+
+.resume .resume-button:hover {
+	background-color: #037EBF;
+	transition: background 0.5s;
+}
+
+.resume img {
+	width: auto;
+	height: 100px;
+}
+
+.resume .fixed {
+	height: 100px;
+}
+
+.resume #ism-logo {
+	height: 90px;
+	position: relative;
+	transform: translate(0px, 3px);
+}
+
+.resume #princeton-logo {
+	height: 90px;
+	position: relative;
+	transform: translate(0px, 3px);
+}
+
+.resume #ewb-logo {
+	width: 120px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, 10px);
+}
+
+.resume #e-club-logo {
+	width: 80px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, 10px);
+}
+
+.resume #business-today-logo {
+	width: 270px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, 30px);
+}
+
+.resume #ca-logo {
+	width: 100px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, 11px);
+}
+
+.resume #launch-logo {
+	width: 70px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, 8px);
+}
+
+.resume #rustic-pathways-logo {
+	width: 300px;
+	height: auto;
+	position: relative;
+	transform: translate(0px, 13px);
+}
+
+/* Contact Me */
+.contact {
+	background: url("http://www.trade-secret.co.uk/wp-content/uploads/2015/08/Dark-Grey-Background-Best-Wallpaper-Gallery-dji6x-Free.jpeg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.contact h2 {
+	font-family: "Oswald";
+	font-size: 60px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-shadow: 2px 1px 1px rgba(0,0,0,.5);
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.contact .big-circle {
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	background-color: #000;
+	display: inline-block;
+}
+
+.contact .big-circle:hover {
+	transform: scale(1.1, 1.1);
+	background-color: #037EBF;
+	transition: transform 0.5s;
+	transition: background 0.5s;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+}
+
+.contact .big-circle #email-logo {
+	width: 70px;
+	height: auto;
+}
+
+.contact .big-circle #facebook-logo {
+	width: 40px;
+	height: auto;
+}
+
+.contact .big-circle #linkedin-logo {
+	width: 55px;
+	height: auto;
+}
+
+.social-media-links {
+	padding-bottom: 70px;
+}
+
+/* Contact Me Labels */
+.dropdown-content-contact {
+	font-family: "Oswald";
+	font-size: 22px;
+	text-transform: uppercase;
+	display: none;
+	position: absolute;
+	background-color: #F9F9F9;
+	margin-top: 15px;
+	padding: 0px 10px;
+	color: #037EBF;
+	width: 100%;
+}
+
+.dropdown:hover .dropdown-content-contact {
+	display: block;
+}
+
+/* Footer */
+.footer {
+	background-color: #000;
+}
+
+.footer h6 {
+	text-align: right;
+	font-family: "Arial";
+	color: #FFF;
+}
+
+.footer h6 a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.footer h6 a:hover {
+	text-decoration: underline;
+}
