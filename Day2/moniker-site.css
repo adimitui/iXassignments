@@ -163,6 +163,10 @@ body div:nth-child(7) div {
 /* Overlay */
 .overlay {
 	position: relative;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-o-transition: opacity 2s;
+	transition: opacity 2s;
 }
 
 .overlay:before {

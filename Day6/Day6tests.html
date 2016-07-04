@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day6 Tests</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.23.1.css">
+    <script src="./Day6functions.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-1.23.1.js"></script>
+
+    <script type="text/javascript">
+        QUnit.test("average test 1", function( assert ) {
+            assert.ok(average([1, 2, 3]) === 2, "Passed!" );
+        });
+        QUnit.test("average test 2", function( assert ) {
+            assert.ok(average([0, 0, 0, -1, 1, 6]) === 1, "Passed!" );
+        });
+        QUnit.test("assignGrade test 1", function( assert ) {
+            assert.ok(assignGrade(70) === 'C', "Passed!" );
+        });
+        QUnit.test("assignGrade test 2", function( assert ) {
+            assert.ok(assignGrade(82) === 'B', "Passed!" );
+        });
+        QUnit.test("pluralize test 1", function( assert ) {
+            assert.ok(pluralize(1, "cat") === "1 cat", "Passed!" );
+        });
+        QUnit.test("pluralize test 2", function( assert ) {
+            assert.ok(pluralize(15, "dog") === "15 dogs", "Passed!" );
+        });
+        QUnit.test("longestWord test 1", function( assert ) {
+            assert.ok(longestWord("hey what is up hello how are you doing today") === "hello", "Passed!" );
+        });
+        QUnit.test("palindrome test 1", function( assert ) {
+            assert.ok(palindrome("racecar") === "yes", "Passed!" );
+        });
+        QUnit.test("palindrome test 2", function( assert ) {
+            assert.ok(palindrome("moom") === "yes", "Passed!" );
+        });
+        QUnit.test("palindrome test 3", function( assert ) {
+            assert.ok(palindrome("iXperience") === "no", "Passed!" );
+        });
+        QUnit.test("palindrome test 4", function( assert ) {
+            assert.ok(palindrome("mommy") === "no", "Passed!" );
+        });
+        QUnit.test("letterCounter test 1", function( assert ) {
+            assert.ok(letterCounter("my name is billie", "l") === 2, "Passed!" );
+        });
+        QUnit.test("letterCounter test 2", function( assert ) {
+            assert.ok(letterCounter("my name is allie", "z") === 0, "Passed!" );
+        });
+        QUnit.test("letterCounter test 3", function( assert ) {
+            assert.ok(letterCounter("whats goin on duuuuuude", "o") === 2, "Passed!" );
+        });
+        QUnit.test("longestPalindrome test 1", function( assert ) {
+            assert.ok(longestPalindrome("hey whats up here a sentence") === "sentence is not a palindrome", "Passed!" );
+        });
+        QUnit.test("longestPalindrome test 2", function( assert ) {
+            assert.ok(longestPalindrome("long word racecar") === "racecar is a palindrome", "Passed!" );
+        });
+        QUnit.test("areAnagrams test 1", function( assert ) {
+            assert.ok(areAnagrams("long words racecar", "racca longsworder") === "yes", "Passed!" );
+        });
+        QUnit.test("areAnagrams test 2", function( assert ) {
+            assert.ok(areAnagrams("laptop toppers", "lap whiz toppers") === "no", "Passed!" );
+        });
+    </script>
+</body>
+</html>

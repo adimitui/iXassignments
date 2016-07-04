@@ -15,10 +15,10 @@
 }
 
 @media(max-width: 768px) {
-	.red-border { 
+	.red-border {
 		border: 1px green solid; 
 	}
-	
+
     .blue-border{
      border: 1px yellow solid; 
  	}

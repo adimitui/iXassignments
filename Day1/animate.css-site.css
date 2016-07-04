@@ -42,7 +42,7 @@
 
 /* Header */
 h1 {
-	font-family: robotothin, Verdana, sans-serif;
+	font-family: "robotothin", Verdana, sans-serif;
 	font-size: 80px;
 	text-align: center;
 	margin-bottom: -10px;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h3 {
-	font-family: robotoregular, Verdana, sans-serif;
+	font-family: "robotoregular", Verdana, sans-serif;
 	font-size: 20px;
 	text-align: center;
 	color: #86939C;
@@ -94,7 +94,7 @@ button {
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-	font-family: robotoregular;
+	font-family: "robotoregular";
 }
 
 /* Show the dropdown menu */
@@ -117,7 +117,7 @@ button {
 }
 
 #animateButton p {
-	font-family: robotobold;
+	font-family: "robotobold";
 	color: #008FCC;
 }
 
@@ -132,7 +132,7 @@ div:last-child {
 }
 
 div:last-child p {
-	font-family: robotoregular, Verdana, sans-serif;
+	font-family: "robotoregular", Verdana, sans-serif;
 	color: #999;
 }
 
@@ -146,6 +146,6 @@ div:last-child p {
 }
 
 h6 {
-	font-family: robotoregular, Verdana, sans-serif;
+	font-family: "robotoregular", Verdana, sans-serif;
 	color: #999;
 }
