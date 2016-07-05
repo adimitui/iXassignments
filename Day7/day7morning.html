@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day 7 Morning</title>
+	<link rel="stylesheet" href="./day7morning.css">
+</head>
+<body>
+
+	<!-- when the show names button is clicked, the current names in the form should be printed to the console -->
+	<form id="form1" onsubmit="getFormvalue()">  
+		First name: <input type="text" name="fname" value="David" id="first"><br>  
+		Last name: <input type="text" name="lname" value="Beckham" id="last"><br>  
+	</form>  
+
+	<!-- when the change color button is clicked, the text in this div should turn red -->
+	<div class="change-color" id="color-div">
+		Here's a fun little div.
+	</div>
+
+	<button id="name-btn">Click to show names</button>
+	<button id="color-btn">Click to change color</button>
+	<button id="image-btn">Click to show image</button>
+	
+
+	<!-- when the toggle images button is clicked, a transparent black background should appear with a dog picture centered on top of it. when the background is clicked again, the image and background should go away. -->
+	<div class="lightbox" id="lightbox">
+		<div id="image" class="lightbox-contents">
+			<img src="http://www.lovethispic.com/uploaded_images/53451-Cute-Dog.jpg" alt="">
+		</div>
+		<div id="screen" class="lightbox-bg"></div>
+	</div>
+
+	<script src="./day7morning.js"></script>
+
+</body>
+</html>
