@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day6 Tests</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.23.1.css">
+    <script src="./Day6afternoon.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-1.23.1.js"></script>
+
+    <script type="text/javascript">
+        QUnit.test("allUniqueCharacters test 1", function( assert ) {
+            assert.ok(allUniqueCharacters("only uqe chars") === "yes", "Passed!" );
+        });
+        QUnit.test("allUniqueCharacters test 2", function( assert ) {
+            assert.ok(allUniqueCharacters("this sentence has non-unique characters") === "no", "Passed!" );
+        });
+        QUnit.test("allUniqueCharacters test 3", function( assert ) {
+            assert.ok(allUniqueCharacters("soak yip hen") === "yes", "Passed!" );
+        });
+        QUnit.test("missingNum test 1", function( assert ) {
+            assert.ok(missingNum([9,2,3,6,5,4,10,1,7]) === 8, "Passed!" );
+        });
+        QUnit.test("missingNum test 2", function( assert ) {
+            assert.ok(missingNum([2,1,4,8,5,6,10,7,9]) === 3, "Passed!" );
+        });
+        QUnit.test("areRotatedVersions test 1", function( assert ) {
+            assert.ok(areRotatedVersions([3,6,7,8,1,2],[1,2,3,6,7,8]) === 'yes', "Passed!" );
+        });
+        QUnit.test("areRotatedVersions test 2", function( assert ) {
+            assert.ok(areRotatedVersions([3,6,7,9,1,2,4],[1,2,3,5,7,8]) === 'no', "Passed!" );
+        });
+        QUnit.test("areRotatedVersions test 3", function( assert ) {
+            assert.ok(areRotatedVersions([8,8,9,1,2,4],[1,2,4,8,8,9]) === 'yes', "Passed!" );
+        });
+        QUnit.test("nPrimeNums test 1", function( assert ) {
+            assert.ok(nPrimeNums(4) === "2,3,5,7", "Passed!" );
+        });
+        QUnit.test("nPrimeNums test 2", function( assert ) {
+            assert.ok(nPrimeNums(6) === "2,3,5,7,11,13", "Passed!" );
+        });
+        QUnit.test("doItTwice test 1", function( assert ) {
+            assert.ok(doItTwice(function f() { return "hi"; }) === "hihi", "Passed!" );
+        });
+        QUnit.test("doItTwice test 2", function( assert ) {
+            assert.ok(doItTwice(function f() { return 1; }) === 2, "Passed!" );
+        });
+        QUnit.test("objectFun test 1", function( assert ) {
+            assert.ok(objectFun("Allie", "Ivener", 21, "allie@ixperience.co.za", "blue")["first_name"] === "Allie", "Passed!" );
+        });
+        QUnit.test("objectFun test 2", function( assert ) {
+            assert.ok(objectFun("Allie", "Ivener", 21, "allie@ixperience.co.za", "blue")["last_name"] === "Ivener", "Passed!" );
+        });
+        QUnit.test("objectFun test 3", function( assert ) {
+            assert.ok(objectFun("Allie", "Ivener", 21, "allie@ixperience.co.za", "blue")["age"] === 21, "Passed!" );
+        });
+        QUnit.test("objectFun test 4", function( assert ) {
+            assert.ok(objectFun("Allie", "Ivener", 21, "allie@ixperience.co.za", "blue")["fav_color"] === "blue", "Passed!" );
+        });
+        QUnit.test("numChildren test 1", function( assert ) {
+            var testObj = {
+                name: "Sue",
+                age: 45,
+                hometown: "Cape Town",
+                children: [
+                    {
+                        name: "Billy",
+                        age: 5
+                    },
+                    {
+                        name: "Sally",
+                        age: 8
+                    },
+                    {
+                        name: "Joey",
+                        age: 12
+                    }
+                ]
+            }
+            assert.ok(numChildren(testObj) === 3, "Passed!" );
+        });
+        QUnit.test("sayHello test 1", function( assert ) {
+            assert.ok(sayHello("Tom", "Higgins", greeting) === "Hello, Tom Higgins!", "Passed!" );
+        });
+    </script>
+</body>
+</html>

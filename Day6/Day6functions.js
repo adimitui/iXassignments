@@ -69,9 +69,9 @@ function letterCounter(phrase, letter) {
 function longestPalindrome(sentence) {
     var longest = longestWord(sentence);
     if (palindrome(longest) === "yes") {
-        return longestWord(sentence) + " is a palindrome";
+        return longest + " is a palindrome";
     } else {
-        return longestWord(sentence) + " is not a palindrome";
+        return longest + " is not a palindrome";
     }
 }
 
