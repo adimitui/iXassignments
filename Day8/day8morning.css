@@ -1,0 +1,39 @@
+.lightbox-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	z-index: 0;
+}
+
+.lightbox-contents {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+}
+
+.lightbox {
+	/* this should not be on the screen to start*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.lightbox.isVisible {
+	/* this does exactly what it sounds like it does */
+	transform: translate(0%, 0);
+}
+
+.black {
+	color: #000;
+}
+
+.red {
+	color: #FF0000;
+}
