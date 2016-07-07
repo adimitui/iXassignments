@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Title of Website -->
+	<title>Day 8 Afternoon Assignment: Grocery Title</title>
+
+	<!-- Link to CSS Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="grocery-style.css"/>
+</head>
+
+<body ng-app="groceryApp">
+	<div ng-controller ="GroceryCtrl" class="container">
+		<h1>Adelle's Grocery List</h1>
+
+		Food Item: <input type="text" ng-model="newItem">
+
+		Quantity: <input type="text" ng-model="newItemQuantity">
+
+		<button ng-click="addItem()">Submit</button>
+
+		<div class="row">
+			<label><strong>Search: </strong><input type="text" ng-model="search" class="small-searchbox"></label>
+		</div>
+
+		<ol>
+			<li ng-repeat="item in items | filter:search">
+				{{ item.name }} - {{ item.quantity }}
+				<button ng-click="increaseQuantity(item)">+</button>
+				<button ng-click="decreaseQuantity(item)">-</button>
+			</li>
+		</ol>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	<script src="grocery-angular.js"></script>
+</body>
+</html>
