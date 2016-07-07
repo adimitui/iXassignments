@@ -1,0 +1,30 @@
+* {
+	font-family: "Helvetica";
+}
+
+.container {
+	width: 1150px;
+	margin: 0px auto;
+}
+
+input {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	padding: 5px 5px;
+}
+
+.small-textbox {
+	width: 180px;
+	display: inline-block;
+	border-radius: 0px;
+	border: 1px solid #A9A9A9;
+	margin-left: 3px;
+}
+
+button {
+	border-radius: 5px;
+	background-color: #FFF;
+	padding: 8px 15px;
+	border: 1px solid #CCC;
+}
