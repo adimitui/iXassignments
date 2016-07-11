@@ -1,0 +1,16 @@
+.movie-page img.movie-poster {
+	margin-top: 30px;
+}
+
+.movie-page ul {
+	list-style: none;
+}
+
+.movie-page ul li {
+	list-style: none;
+}
+
+.movie-page ul li img {
+	width: 200px;
+	height: auto;
+}
