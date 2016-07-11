@@ -1,0 +1,14 @@
+<link rel="stylesheet" type="text/css" href="day11morning.css"/>
+
+<h1>Movie Search</h1>
+
+<div class="home" ng-controller="MainCtrl">
+	<input type="text" ng-model="searchText">
+	<button ng-click="searchMovies()">Search</button>
+
+	<ul>
+		<li ng-repeat="movie in movieArray track by $index">
+			<a href="#/movie/{{ movie.imdbID }}">{{ movie.Title }}</a>
+		</li>
+	</ul>
+</div>
