@@ -1,0 +1,14 @@
+<link rel="stylesheet" type="text/css" href="/../day11morning.css"/>
+
+<div class="movie-page" ng-controller="MovieCtrl">
+	<img class="movie-poster" src="{{ movie.Poster }}"/>
+	<h1>{{ movie.Title }}</h1>
+	<h4><strong>Director: </strong>{{ movie.Director }}</h4>
+	<h4><strong>Plot Synopsis: </strong>{{ movie.Plot }}</h4>
+
+	<ul>
+		<li ng-repeat="movieImage in movieImages track by $index">
+			<img ng-src="{{ movieImage.images.downsized.url }}"/>
+		</li>
+	</ul>
+</div>
