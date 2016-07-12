@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 9 Afternoon Assignment</title>
+	<link rel="stylesheet" type="text/css" href="day9assignment.css"/>
+</head>
+
+<body ng-app="nyTimesApp">
+	<div ng-controller="MainCtrl" class="container">
+		Search: <input type="text" ng-model="searchText">
+		<button ng-click="searchArticles()">Search Articles</button>
+
+		<div ng-repeat="a in articles">
+			<h3><a href="{{ a.web_url }}">{{ a.headline.main }}</a></h3>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	<script src="day9assignment.js"></script>
+</body>
+</html>
