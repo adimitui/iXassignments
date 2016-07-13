@@ -38,10 +38,26 @@ app.controller("FeedCtrl", function($scope, $http) {
 
 
 	$scope.sendProps = function() {
- 		$scope.undefinedProp = false;
-		$scope.notPositive = false;
+		$scope.isSending = true;
+ 		$scope.showErrorMessage = false;
+ 		console.log($scope.selectedBru);
 
-		if ($scope.newPropsValue !== undefined) {
+		if ($scope.newPropsValue === undefined) {
+			$scope.showErrorMessage = true;
+			$scope.errorMessage = "Type something into the compliment box before submitting!";
+			console.log($scope.errorMessage);
+			$scope.isSending = false;
+		} else if ($scope.selectedBru === undefined) {
+			$scope.showErrorMessage = true;
+			$scope.errorMessage = "Choose a bru to send your prop to before submitting!";
+			console.log($scope.errorMessage);
+			$scope.isSending = false;
+		} else if ($scope.selectedBru === "adelle") {
+			$scope.showErrorMessage = true;
+			$scope.errorMessage = "You can't send a compliment to yourself. Try spreading the love around!";
+			console.log($scope.errorMessage);
+			$scope.isSending = false;
+		} else {
 			console.log($scope.selectedBru + " " + $scope.newPropsValue);
 
 			$http({
@@ -57,14 +73,18 @@ app.controller("FeedCtrl", function($scope, $http) {
 			}).then(function(response) {
 				console.log(response.data);
 				$scope.props.unshift(response.data);
+				$scope.isSending = false;
+				$scope.newPropsValue = "";
 			}).catch(function(response) {
+				$scope.showErrorMessage = true;
 				$scope.errorMessage = "We can't accept your input. Try writing something more positive!";
-				console.log($scope.errorMessage);
-				$scope.notPositive = true;
+				$scope.isSending = false;
+			}).finally(function() {
+				if ($scope.showErrorMessage === true) {
+					console.log($scope.errorMessage);
+				}
+				$scope.isSending = false;
 			})
-		} else {
-			$scope.undefinedProp = true;
-			console.log($scope.undefinedProp);
 		}
 	}
 
