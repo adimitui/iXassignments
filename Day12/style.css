@@ -42,7 +42,7 @@ div.header h2 {
 }
 
 div.header h2:hover {
-	color: #81B636;
+	color: #81A847;
 	transition: color 0.3s ease;
 }
 
@@ -121,6 +121,10 @@ div.top button {
 
 div.top button:hover {
 	transform: translate(0,-2px);
+}
+
+div.top button:active {
+	transform: translate(0,2px);
 }
 
 div.top img.refresh {
@@ -217,4 +221,15 @@ div.border {
 	border-bottom: 1px solid #92C14D;
 	display: inline-block;
 	margin-bottom: 15px;
+}
+
+/* Disable */
+.input-disable {
+	background-color: rgba(256,256,256,0.3);
+	pointer-events: none;
+}
+
+.button-disable {
+	opacity: 0.3;
+	pointer-events: none;
 }
