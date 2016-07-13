@@ -2,19 +2,23 @@
 	<div class="top">
 		<h1>Send a <strong>compliment</strong> someone's way!</h1>
 
-		<div class="error" ng-show="undefinedProp">
-			<h4>Type something into the compliment box before submitting!</h4>
-		</div>
-
-		<div class="error" ng-show="notPositive">
+		<div class="error" ng-show="showErrorMessage">
 			<h4>{{ errorMessage }}</h4>
 		</div>
 
-		<input ng-model="newPropsValue" type="text" display="Add your message here!"/>
+		<input ng-model="newPropsValue" type="text" display="Add your message here!" ng-class="{
+			'input-disable': isSending
+		}"/>
 		<div class="center">
-			<select ng-options="bru.id as bru.first_name for bru in brus track by bru.id" ng-model="selectedBru"></select>
-			<button ng-click="sendProps()">Send</button>
-			<button ng-click="refresh()">
+			<select ng-options="bru.id as bru.first_name for bru in brus track by bru.id" ng-model="selectedBru" ng-class="{
+				'input-disable': isSending
+			}"></select>
+			<button ng-click="sendProps()" ng-class="{
+				'button-disable': isSending
+			}">Send</button>
+			<button ng-click="refresh()" ng-class="{
+				'button-disable': isSending
+			}">
 				<img class="refresh" src="http://i346.photobucket.com/albums/p438/adimitui/Refresh%20White_zpsi4ypg918.png"/>
 			</button>
 		</div>
