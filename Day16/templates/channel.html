@@ -1,0 +1,22 @@
+<h1>THIS IS THE CHANNEL PAGE</h1>
+
+<div class="container">
+	<div class="channel-list left">
+		<ul>
+			<li ng-repeat="channel in channels">
+				<a href="#/chat/{{ channel.name }}"><h3>{{ channel.name }}</h3></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="add-channel left">
+		<form ng-submit="addChannel()">
+			<h2>Add a Channel</h2>
+			<label>Name</label>
+			<input type="text" ng-model="newChannelName"/>
+			<label>Description</label>
+			<input type="text" ng-model="newChannelDescription"/>
+			<button type="text">Add Channel</button>
+		</form>
+	</div>
+</div>
