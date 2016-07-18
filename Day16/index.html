@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Day 13 Morning Assignment</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+	<link href='https://fonts.googleapis.com/css?family=Asap|Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-app="tensionApp">
+	<div ng-controller="HeaderCtrl">
+		<div class="header">
+		    <div class="container">
+		    	<div class="one-half left">
+			        <a href="#/channels">
+			        	<div class="header-button active">
+			        		<h3>Channels</h3>
+			        	</div>
+			        </a>
+			       	<div class="header-button" ng-click="signOut()">
+			       		<h3>Sign Out</h3>
+			        </div>
+			        
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	<div ng-view></div>
+
+	<!-- Angular -->
+	<script src="angular.js"></script>
+	<script src="angular-route.js"></script>
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+	<script>
+	    // Initialize Firebase
+	    var config = {
+	    	apiKey: "AIzaSyAOuUXhY32MvhGZGvS-9Pw_Xa7x2tKeG3g",
+	    	authDomain: "ixtension2.firebaseapp.com",
+	  		databaseURL: "https://ixtension2.firebaseio.com",
+	    	storageBucket: "ixtension2.appspot.com",
+	    };
+	    firebase.initializeApp(config);
+	</script>
+
+	<script src="script.js"></script>
+</body>
+</html>
