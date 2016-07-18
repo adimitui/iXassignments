@@ -1,0 +1,252 @@
+/* General Classes */
+* {
+	font-family: "Montserrat";
+	box-sizing: border-box;
+}
+
+.center {
+	text-align: center;
+}
+
+.one-half {
+	width: 49%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* Header */
+div.header {
+	width: 100%;
+	background-color: #333;
+}
+
+div.header .header-button {
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+div.header .active {
+	background-color: #EB3928;
+}
+
+div.header a:hover {
+	text-decoration: none;
+}
+
+div.header a:hover .header-button, div.header .header-button:hover {
+	background-color: #EB3B24;
+	transition: all 0.3s ease;
+}
+
+div.header a:active .header-button, div.header .header-button:active {
+	background-color: #A22814;
+}
+
+div.header a:hover .active {
+	background-color: #A22814;
+	transition: all 0.3s ease;
+}
+
+div.header a:active .active {
+	background-color: #FFF;
+}
+
+div.header a:active .active h3 {
+	color: #A22814;
+	transition: all 0.3s ease;
+}
+
+div.header h3 {
+	color: #FFF;
+}
+
+/* Form */
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+form {
+	margin-bottom: 30px;
+}
+
+form h4 {
+	display: inline-block;
+	text-align: center;
+}
+
+form input.namebox {
+	display: inline-block;
+	font-size: 16px;
+	background-color: #BEB9AF;
+	border: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 200px;
+	margin-bottom: 12px;
+	padding-left: 10px;
+}
+
+form input.namebox::-webkit-input-placeholder {
+	color: #FFF;
+}
+
+form button.sign-out {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: none;
+	display: inline-block;
+}
+
+form input.textbox {
+	width: 89%;
+	float: left;
+	margin-right: 1%;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+	color: #453A36;
+}
+
+form input.textbox::-webkit-input-placeholder {
+	color: #A9A9A9;
+}
+
+form button {
+	width: 10%;
+	float: left;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #463A3A;
+	color: #FFF;
+	border: none;
+}
+
+form button:hover {
+	background-color: #EE3A24;
+	transition: background-color 0.3s ease;
+}
+
+form button:active {
+	background-color: #B0291E;
+}
+
+/* Channels */
+div.channel-list {
+	width: 40%;
+	float: left;
+}
+
+div.add-channel {
+	width: 60%;
+	background-color: #EEE;
+	border: 1px solid #333;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.add-channel input {
+	margin-bottom: 10px;
+}
+
+div.add-channel form input:nth-child(3) {
+	width: 40%;
+	display: block;
+}
+
+div.add-channel form input:nth-child(5) {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+
+div.add-channel button {
+	width: 150px;
+	float: none;
+	display: block;
+}
+
+/* List */
+div.message-list h4 {
+	border: 1px solid #EC3726;
+	padding: 10px 15px;
+	font-size: 16px;
+}
+
+div.message-list h4:hover {
+	background-color: #E2938C;
+	transition: background-color 0.3s ease;
+}
+
+/* Sign Up / Log In */
+div.signup-box {
+	border: 1px solid #00A1AD;
+	background-color: #C0E1E5;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+
+div.signup-box h2 {
+	color: #00A1AD;
+}
+
+div.signup-box input, div.login-box input {
+	width: 100%;
+}
+
+div.signup-box button, div.login-box button {
+	width: 100px;
+}
+
+div.signup-box button, div.login-box button {
+	margin-top: 10px;
+}
+
+div.signup-box button:hover {
+	background-color: #00A1AD;
+}
+
+div.signup-box button:active {
+	background-color: #17BCCC;
+}
+
+div.login-box {
+	border: 1px solid #453A36;
+	background-color: #EEE;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+
+div.login-box button:hover {
+	background-color: #B4271E;
+}
+
+div.login-box button:active {
+	background-color: #E53929;
+}
+
+/* Error */
+div.error-box {
+	background-color: #F2D0CD;
+	border: 1px solid #EB3928;
+	border-radius: 10px;
+	text-align: center;
+	color: #EB3928;
+	margin-bottom: 15px;
+}
