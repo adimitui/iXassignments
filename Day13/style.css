@@ -8,6 +8,66 @@
 	text-align: center;
 }
 
+.one-half {
+	width: 49%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* Header */
+div.header {
+	width: 100%;
+	background-color: #333;
+}
+
+div.header .header-button {
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+div.header .active {
+	background-color: #EB3928;
+}
+
+div.header a:hover {
+	text-decoration: none;
+}
+
+div.header a:hover .header-button, div.header .header-button:hover {
+	background-color: #EB3B24;
+	transition: all 0.3s ease;
+}
+
+div.header a:active .header-button, div.header .header-button:active {
+	background-color: #A22814;
+}
+
+div.header a:hover .active {
+	background-color: #A22814;
+	transition: all 0.3s ease;
+}
+
+div.header a:active .active {
+	background-color: #FFF;
+}
+
+div.header a:active .active h3 {
+	color: #A22814;
+	transition: all 0.3s ease;
+}
+
+div.header h3 {
+	color: #FFF;
+}
+
 /* Form */
 h1 {
 	text-align: center;
@@ -37,6 +97,13 @@ form input.namebox {
 
 form input.namebox::-webkit-input-placeholder {
 	color: #FFF;
+}
+
+form button.sign-out {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: none;
+	display: inline-block;
 }
 
 form input.textbox {
@@ -75,6 +142,42 @@ form button:active {
 	background-color: #B0291E;
 }
 
+/* Channels */
+div.channel-list {
+	width: 40%;
+	float: left;
+}
+
+div.add-channel {
+	width: 60%;
+	background-color: #EEE;
+	border: 1px solid #333;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.add-channel input {
+	margin-bottom: 10px;
+}
+
+div.add-channel form input:nth-child(3) {
+	width: 40%;
+	display: block;
+}
+
+div.add-channel form input:nth-child(5) {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+
+div.add-channel button {
+	width: 150px;
+	float: none;
+	display: block;
+}
+
 /* List */
 div.message-list h4 {
 	border: 1px solid #EC3726;
@@ -85,4 +188,65 @@ div.message-list h4 {
 div.message-list h4:hover {
 	background-color: #E2938C;
 	transition: background-color 0.3s ease;
+}
+
+/* Sign Up / Log In */
+div.signup-box {
+	border: 1px solid #00A1AD;
+	background-color: #C0E1E5;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+
+div.signup-box h2 {
+	color: #00A1AD;
+}
+
+div.signup-box input, div.login-box input {
+	width: 100%;
+}
+
+div.signup-box button, div.login-box button {
+	width: 100px;
+}
+
+div.signup-box button, div.login-box button {
+	margin-top: 10px;
+}
+
+div.signup-box button:hover {
+	background-color: #00A1AD;
+}
+
+div.signup-box button:active {
+	background-color: #17BCCC;
+}
+
+div.login-box {
+	border: 1px solid #453A36;
+	background-color: #EEE;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+
+div.login-box button:hover {
+	background-color: #B4271E;
+}
+
+div.login-box button:active {
+	background-color: #E53929;
+}
+
+/* Error */
+div.error-box {
+	background-color: #F2D0CD;
+	border: 1px solid #EB3928;
+	border-radius: 10px;
+	text-align: center;
+	color: #EB3928;
+	margin-bottom: 15px;
 }

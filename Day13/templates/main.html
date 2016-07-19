@@ -3,10 +3,6 @@
 
 	<div class="row">
 		<form ng-submit>
-			<div class="center">
-				<h4>You are sending as: </h4>
-				<input class="namebox" type="text" ng-model="senderValue" placeholder="John Doe"/>
-			</div>
 			<input class="textbox" type="text" ng-model="messageValue" placeholder="Type your message here"/>
 			<button type="submit" ng-click="sendMessage()">Send</button>
 		</form>
@@ -14,7 +10,7 @@
 
 	<div class="row">
 		<div class="message-list">
-			<h4 ng-repeat="message in messages"><strong>{{ message.sender }}</strong> {{ message.text }}</h4>
+			<h4 ng-repeat="message in messages"><strong>{{ message.name }}</strong> {{ message.text }}</h4>
 		</div>
 	</div>
 </div>

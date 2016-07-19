@@ -12,6 +12,24 @@
 </head>
 
 <body ng-app="tensionApp">
+	<div ng-controller="HeaderCtrl">
+		<div class="header">
+		    <div class="container">
+		    	<div class="one-half left">
+			        <a href="#/channels">
+			        	<div class="header-button active">
+			        		<h3>Channels</h3>
+			        	</div>
+			        </a>
+			       	<div class="header-button" ng-click="signOut()">
+			       		<h3>Sign Out</h3>
+			        </div>
+			        
+		        </div>
+		    </div>
+		</div>
+	</div>
+
 	<div ng-view></div>
 
 	<!-- Angular -->
@@ -20,15 +38,15 @@
 	<!-- Firebase -->
 	<script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
 	<!-- AngularFire -->
-	<script src="https://cdn.firebase.com/libs/angularfire/2.0.0/angularfire.min.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
 
 	<script>
 	    // Initialize Firebase
 	    var config = {
-	    	apiKey: "AIzaSyDxN7mq5j_cTbaEwrGjxF0NiWYv8TTid8Y",
-	    	authDomain: "ixtension-55b48.firebaseapp.com",
-	  		databaseURL: "https://ixtension-55b48.firebaseio.com",
-	    	storageBucket: "ixtension-55b48.appspot.com",
+	    	apiKey: "AIzaSyAOuUXhY32MvhGZGvS-9Pw_Xa7x2tKeG3g",
+	    	authDomain: "ixtension2.firebaseapp.com",
+	  		databaseURL: "https://ixtension2.firebaseio.com",
+	    	storageBucket: "ixtension2.appspot.com",
 	    };
 	    firebase.initializeApp(config);
 	</script>

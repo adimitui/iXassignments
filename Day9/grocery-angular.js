@@ -4,7 +4,6 @@ app.controller("GroceryCtrl", function($scope) {
 	$scope.newItem = "";
 	$scope.newItemQuantity = "";
 	$scope.items = [];
-	var lowercaseItems = []; // for non-case-sensitive purposes
 
 	$scope.addItem = function() {
 		if (isNaN($scope.newItem)) {

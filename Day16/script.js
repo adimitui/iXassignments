@@ -1,5 +1,21 @@
 var app = angular.module("tensionApp", ["ngRoute", "firebase"]);
 
+// {
+//     "Version": "2012-10-17",
+//     "Statement": [
+//         {
+//             "Sid": "Stmt1468885960000",
+//             "Effect": "Allow",
+//             "Action": [
+//                 "s3:PutObject"
+//             ],
+//             "Resource": [
+//                 "arn:aws:s3:::adevo-library"
+//             ]
+//         }
+//     ]
+// }
+
 app.run(["$rootScope", "$location", function($rootScope, $location) {
 	$rootScope.$on("$routeChangeError", function(event, next, previous, error) {
 	    if (error === "AUTH_REQUIRED") {
